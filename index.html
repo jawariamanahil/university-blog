@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University of Layyah - Official Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="header-container">
+            <div class="logo-container">
+                <img src="logo.jpeg" alt="University of Layyah Logo" class="logo-img">
+            </div>
+
+            <div class="header-text">
+                <h1>University of Layyah</h1>
+                <p>Official Student &amp; Campus Insights Blog</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-container">
+
+        <article class="blog-card">
+            <span class="category-badge">CAMPUS LIFE</span>
+            <h2>Welcome to University of Layyah Official Blog</h2>
+            <p class="post-meta">Published by Admin | October 2026</p>
+            <p class="post-text">
+                Welcome to our revamped digital space! Explore recent announcements,
+                academic news, and campus department events all in one place.
+            </p>
+            <button class="like-btn" onclick="increaseLike(this)">
+                ❤️ Like (<span class="like-count">0</span>)
+            </button>
+        </article>
+
+        <article class="blog-card">
+            <span class="category-badge">EVENTS</span>
+            <h2>Annual Sports &amp; Cultural Gala 2026</h2>
+            <p class="post-meta">Published by Sports Society | October 2026</p>
+            <p class="post-text">
+                Get ready for an action-packed week! Registrations for cricket,
+                football, athletics, and cultural events are now open.
+                Showcase your talents.
+            </p>
+            <button class="like-btn" onclick="increaseLike(this)">
+                ❤️ Like (<span class="like-count">0</span>)
+            </button>
+        </article>
+
+        <section class="comment-section">
+            <h3>Join the Discussion</h3>
+
+            <form id="commentForm">
+                <input type="email" id="userEmail"
+                       placeholder="Your email address" required>
+
+                <textarea id="userComment" rows="4"
+                          placeholder="Share your thoughts..." required></textarea>
+
+                <button type="submit" class="submit-btn">Post Comment</button>
+            </form>
+
+            <div class="recent-comments">
+                <h4>Recent Comments</h4>
+                <ul id="commentsList"></ul>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 University of Layyah. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
